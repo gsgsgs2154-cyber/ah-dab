@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <title>الحياة المتطورة</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>الحياة المتطورة</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
@@ -16,92 +17,53 @@
     <button onclick="openPopup('tech')">التكنولوجيا</button>
     <button onclick="openPopup('ai')">الذكاء الاصطناعي</button>
     <button onclick="openPopup('life')">الحياة اليومية</button>
+   
 </nav>
 
 <section id="main">
     <h2>الصفحة الرئيسية</h2>
-
     <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" class="main-img">
-
-    <p>
-        نعيش اليوم في عالم متطور مليء بالتكنولوجيا الحديثة التي غيرت طريقة حياتنا بالكامل،
-        من التواصل إلى العمل وحتى الترفيه.
-    </p>
-
-    <p>
-        اضغط على أي موضوع في الأعلى لاستكشاف تفاصيل أكثر مع أمثلة وصور توضيحية.
-    </p>
+    <p>نعيش اليوم في عالم متطور مليء بالتكنولوجيا التي غيرت حياتنا بالكامل.</p>
 </section>
 
 <footer>
-    <p>© اهداب (: </p>
+    <p>© المطور: اهداب</p>
 </footer>
 
-<!-- Popup التكنولوجيا -->
 <div class="popup" id="tech">
     <div class="content">
         <h2>📱 التكنولوجيا</h2>
-
-        <p>التكنولوجيا غيرت العالم بشكل ضخم، وأصبحت جزء من كل شيء حولنا.</p>
-
-        <h3>أمثلة:</h3>
         <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
-        <p>الهواتف الذكية: نستخدمها للتواصل والعمل والترفيه.</p>
-
+        <p>الهواتف الذكية سهلت التواصل والعمل.</p>
         <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
-        <p>الإنترنت: ربط العالم ببعضه وسهل الوصول للمعلومات.</p>
-
+        <p>الإنترنت ربط العالم بالكامل.</p>
         <button onclick="closePopup('tech')">⬅ رجوع</button>
     </div>
 </div>
 
-<!-- Popup الذكاء الاصطناعي -->
 <div class="popup" id="ai">
     <div class="content">
         <h2>🤖 الذكاء الاصطناعي</h2>
-
-        <p>الذكاء الاصطناعي هو مستقبل العالم ويستخدم في مجالات كثيرة.</p>
-
-        <h3>أمثلة:</h3>
         <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995">
-        <p>الشات بوت: يساعد المستخدمين ويجاوب على الأسئلة.</p>
-
+        <p>الشات بوت يساعد المستخدمين.</p>
         <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a">
-        <p>السيارات الذكية: تقود نفسها بدون تدخل بشري.</p>
-
+        <p>السيارات الذكية تقود نفسها.</p>
         <button onclick="closePopup('ai')">⬅ رجوع</button>
     </div>
 </div>
 
-<!-- Popup الحياة اليومية -->
 <div class="popup" id="life">
     <div class="content">
         <h2>🏠 الحياة اليومية</h2>
-
-        <p>التكنولوجيا سهلت حياتنا اليومية بشكل كبير.</p>
-
-        <h3>أمثلة:</h3>
         <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
-        <p>التطبيقات: طلب الطعام، المواصلات، والخدمات.</p>
-
+        <p>التطبيقات سهلت حياتنا.</p>
         <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
-        <p>العمل عن بعد: تقدر تشتغل من أي مكان بالعالم.</p>
-
+        <p>العمل عن بعد صار ممكن.</p>
         <button onclick="closePopup('life')">⬅ رجوع</button>
     </div>
 </div>
 
-<script>
-function openPopup(id) {
-    document.getElementById(id).style.display = "flex";
-    document.getElementById("main").style.display = "none";
-}
-
-function closePopup(id) {
-    document.getElementById(id).style.display = "none";
-    document.getElementById("main").style.display = "block";
-}
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
